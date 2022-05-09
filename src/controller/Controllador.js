@@ -11,4 +11,11 @@ export const getIndex = async (req, res) => {
     }
 };
 
-
+export const getDetails = async (req, res) => {
+    try {
+        const soccer_boots_details  = await soccer_boots.findByPk(req.params.id)
+        res.render('details.ejs', {soccer_boots_details})
+    } catch(error) {
+        res.send(error.message)
+    }
+}
