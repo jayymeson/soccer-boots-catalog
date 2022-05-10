@@ -15,8 +15,8 @@
           
             <h2>Edit your favorite boot </h2>
     
-            <form action="/edit/<%= soccer_boots_edit.id %>" method="post">
-                
+            <form method="post" action="/edit/<%= soccer_boots_edit.id %>">
+                <legend> Editing the Soccer Boots <%= soccer_boots_edit.model_name %>  </legend>
                
                 <label for="model_name">Model name: :</label>
                 <input type="text" id="model_name" name="model_name" required value="<%= soccer_boots_edit.model_name %>">
@@ -55,9 +55,6 @@
     
             
         </section>
-
-
-
 
 
     </main>

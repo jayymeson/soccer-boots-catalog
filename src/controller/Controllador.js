@@ -33,6 +33,7 @@ export const getCreate = async (req, res) => {
     res.render("create.ejs")
 }
 
+
 export const postCreate = async (req, res) => {
     const {model_name, brand_name, description, size, value, link_img} = req.body
     try {
@@ -50,7 +51,7 @@ export const postCreate = async (req, res) => {
             res.send('The information cannot return empty.')
         } else {
             await soccer_boots.create({model_name, brand_name, description, size, value, link_img})
-            res.redirect('/')
+            res.render('create.ejs')
         }
     } catch(error) {
         res.send(error.message)
