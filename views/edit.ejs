@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title> Triunfo Store </title>
+    <title> Edit </title>
 </head>
 <body>
     <%- include('./partials/header.ejs') %> 
@@ -13,37 +13,37 @@
         <section id="create">
             
           
-            <h2>Add your favorite boot </h2>
+            <h2>Edit your favorite boot </h2>
     
-            <form action="/create" method="post">
+            <form action="/edit/<%= soccer_boots_edit.id %>" method="post">
                 
                
                 <label for="model_name">Model name: :</label>
-                <input type="text" id="model_name" name="model_name" required>
+                <input type="text" id="model_name" name="model_name" required value="<%= soccer_boots_edit.model_name %>">
 
                 
                 <label for="brand_name">Brand name: :</label>
-                <input type="text" id="brand_name" name="brand_name" required>
+                <input type="text" id="brand_name" name="brand_name" required value="<%= soccer_boots_edit.brand_name %>">
                 
 
                 
                 <label for="description">Description: </label>
-                <input type="text" id="description" name="description" required>
+                <input type="text" id="description" name="description" required value="<%= soccer_boots_edit.description %>">
                 
     
                
                 <label for="size">Size: </label>
-                <input type="text" id="size" name="size" required>
+                <input type="text" id="size" name="size" required value="<%= soccer_boots_edit.size %>">
                 
 
                
                 <label for="value">Price: </label>
-                <input type="text" id="value" name="value" placeholder="ex.: 1399" required>
+                <input type="text" id="value" name="value" placeholder="ex.: 1399" required value="<%= soccer_boots_edit.price %>">
                 
 
                 
                 <label for="link_img">Link Image</label>
-                <input type="text" id="link_img" name="link_img" required>
+                <input type="text" id="link_img" name="link_img" required value="<%= soccer_boots_edit.link_img %>">
                 
 
     
