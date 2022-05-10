@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title> Triunfo Store </title>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %> 
+    <main>
+        <section id="create">
+            
+          
+            <h2>Add your favorite boot </h2>
+    
+            <form action="/create" method="post">
+                
+               
+                <label for="model">Model name: :</label>
+                <input type="text" id="model" name="model" required>
+
+                
+                <label for="brand">Brand name: :</label>
+                <input type="text" id="brand" name="brand" required>
+                
+
+                
+                <label for="description">Description: </label>
+                <input type="text" id="description" name="description" required>
+                
+    
+               
+                <label for="size">Size: </label>
+                <input type="text" id="size" name="size" required>
+                
+
+               
+                <label for="price">Price: </label>
+                <input type="text" id="price" name="price" placeholder="ex.: 1399" required>
+                
+
+                
+                <label for="link_img">Link Image</label>
+                <input type="text" id="link_img" name="link_img" required>
+                
+
+    
+                <button id="button" type="submit">Register now! </button>
+    
+                
+            
+            </form>
+    
+            
+        </section>
+
+
+
+
+
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

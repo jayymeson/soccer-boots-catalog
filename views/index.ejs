@@ -5,15 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://kit.fontawesome.com/9e350f0727.js" crossorigin="anonymous"></script>
     <title> Triunfo Store </title>
 </head>
 <body>
     <%- include('./partials/header.ejs') %> 
         
     <main>
-
-        <section id="card_conteiner">
+        <div id="sub_header">
+            
+        </div>
+        <section id="card_details">
             <% cleats.forEach(element => { %>
                 <a href="/details/<%= element.id %>">
                 <article class="cards">
@@ -25,6 +26,10 @@
                     </div>
                 </article>
                 </a>
+                <div class="btn_conteiner">
+                <a href="/delete/ <%= element.id %>"><i class="fa-solid fa-trash-can"></i></a>
+                <a href="/edit"><i class="fa-solid fa-pen"></i></a>
+                </div>
            <% }) %>         
 
         </section>

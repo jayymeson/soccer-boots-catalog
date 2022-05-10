@@ -19,3 +19,25 @@ export const getDetails = async (req, res) => {
         res.send(error.message)
     }
 }
+
+export const getDelete = async (req, res) => {
+    try {
+        await connection.query(`DELETE FROM soccer_boots WHERE id = ${req.params.id}`)
+        res.redirect("/")
+    } catch(error) {
+        res.send(error.message)
+    }
+}
+
+export const getCreate = async (req, res) => {
+    res.render("create.ejs")
+}
+
+export const postCreate = async (req, res) => {
+    const {model_name, brand_name, description, size, value, link_img} = req.body
+    try {
+        await connection.query(`INSERT INTO soccer_boots (model_name, brand_name, description, size, value, link_img) VALUES ('${model_name}', '${brand_name}', '${description}', '${size}', '${value}', '${link_img}')`)
+    } catch(error) {
+        res.send(error.message)
+    }
+}

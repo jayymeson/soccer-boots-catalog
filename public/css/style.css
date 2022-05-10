@@ -1,9 +1,14 @@
-@font-face {font-family: "Jersey M54"; src: url("//db.onlinewebfonts.com/t/cc4f3a955e985ca61b79c7827c137498.eot"); src: url("//db.onlinewebfonts.com/t/cc4f3a955e985ca61b79c7827c137498.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cc4f3a955e985ca61b79c7827c137498.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cc4f3a955e985ca61b79c7827c137498.woff") format("woff"), url("//db.onlinewebfonts.com/t/cc4f3a955e985ca61b79c7827c137498.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cc4f3a955e985ca61b79c7827c137498.svg#Jersey M54") format("svg"); }
+@font-face {font-family: "DomCasualW01-BoldDiagonal"; src: url("//db.onlinewebfonts.com/t/8077ce86ce5bab9e1fe65ca19136d10d.eot"); src: url("//db.onlinewebfonts.com/t/8077ce86ce5bab9e1fe65ca19136d10d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8077ce86ce5bab9e1fe65ca19136d10d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8077ce86ce5bab9e1fe65ca19136d10d.woff") format("woff"), url("//db.onlinewebfonts.com/t/8077ce86ce5bab9e1fe65ca19136d10d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8077ce86ce5bab9e1fe65ca19136d10d.svg#DomCasualW01-BoldDiagonal") format("svg"); }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: "Jersey M54", sans-serif;
+    font-family: "DomCasualW01-BoldDiagonal", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(255, 255, 255)
 }
 
 body {
@@ -39,9 +44,80 @@ main {
     min-height: 80%;
 }
 
-section#card_conteiner {
+main div#sub_header {
     display: flex;
     justify-content: center;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+table {
+    gap: 16px;
+}
+
+table tr{
+    background-color: #272727;
+}
+
+section#create{
+    display: flex;
+    flex-direction: column; 
+    width: 500px;
+    gap: 24px;
+    height: 100%;
+}
+
+
+section#create form input {
+    width: 85%;
+    padding: 9.6px;
+    font-size: 16px;
+    outline: none;
+    border: solid 1.5px;
+    margin: 0px 16px 16px 0px;
+  }
+
+  section#create form label {
+    font-size: 16px;
+    margin: 16px;
+    color: rgb(255, 255, 255);
+  }
+
+  section#create form button {
+    color: #ffffff;
+    background-color: #272727;
+    height: 80px;
+    width: auto;
+    line-height: 0;
+    padding: 0 20px;
+    border-radius: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    display: block;
+    justify-content: center;
+    margin: auto;
+  }
+
+section#name_model {
+    display: flex;
+    justify-content: center;
+}
+
+section#card_details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    padding: 16px;
+    gap: 16px;
+}
+
+section#details_conteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 32px;
     padding: 16px;
@@ -70,6 +146,12 @@ article.cards div.cards_name {
     display: flex;
     justify-content: center;
     height: 10%;
+}
+
+div.btn_conteiner {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 
