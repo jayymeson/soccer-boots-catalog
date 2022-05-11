@@ -42,3 +42,9 @@ export const soccer_boots = connection.define(
     timestamps: false,
   }
 );
+
+const initTable = async () => {
+  await soccer_boots.sync()
+}
+
+initTable();
