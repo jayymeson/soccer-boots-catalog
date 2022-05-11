@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="icon" href="/img/21232125_159822007929751_7027399478433807117_n.jpg">
     <link rel="stylesheet" href="/css/style.css">
-    <title> Triunfo Store </title>
+    <title> Chuteiras JM </title>
 </head>
 <body>
     <%- include('./partials/header.ejs') %> 
@@ -63,5 +64,16 @@
 
     </main>
     <%- include('./partials/footer.ejs') %>
+    <% if (toggle) { %>
+    <script>
+        Swal.fire({
+        icon: 'success',
+        title: 'Yeah...',
+        text: 'You edited a soccer boot',
+        time: 1500,
+    })
+    setInterval(() => {window.location.href = '/'}, 1500)
+    </script>
+    <% } %>
 </body>
 </html>

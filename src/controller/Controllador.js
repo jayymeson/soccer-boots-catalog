@@ -30,7 +30,7 @@ export const getDelete = async (req, res) => {
 }
 
 export const getCreate = async (req, res) => {
-    res.render("create.ejs")
+    res.render("create.ejs", {toggle: false})
 }
 
 
@@ -51,7 +51,7 @@ export const postCreate = async (req, res) => {
             res.send('The information cannot return empty.')
         } else {
             await soccer_boots.create({model_name, brand_name, description, size, value, link_img})
-            res.render('create.ejs')
+            res.render('create.ejs', {toggle: true})
         }
     } catch(error) {
         res.send(error.message)
@@ -60,7 +60,7 @@ export const postCreate = async (req, res) => {
 
 export const getEdit = async (req, res) => {
     try {
-        const soccer_boots_edit = soccer_boots.findByPk(req.params.id)
+        const soccer_boots_edit = await soccer_boots.findByPk(req.params.id)
         res.render('edit.ejs', {soccer_boots_edit})
     } catch(error) {
         res.send(error.message)
@@ -82,8 +82,8 @@ export const postEdit = async (req, res) => {
                id: req.params.id
            } 
         })
-        res.redirect("/");
+        res.redirect('/');
     } catch (error) {
         res.send(error.message)
-    }
+    } 
 }
