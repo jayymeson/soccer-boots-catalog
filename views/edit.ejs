@@ -16,36 +16,40 @@
           
             <h2>Edit your favorite boot </h2>
     
-            <form method="post" action="/edit/<%= soccer_boots_edit.id %> ">
+                <form class="form" method="post" action="/edit/<%= soccer_boots_edit.id %> ">
                 <legend> Editing the Soccer Boots <%= soccer_boots_edit.model_name %>  </legend>
                
+                <fieldset class="fieldset">
                 <label for="model_name">Model name: :</label>
                 <input type="text" id="model_name" name="model_name" required value="<%= soccer_boots_edit.model_name %>">
+                </fieldset>
 
-                
+                <fieldset class="fieldset">
                 <label for="brand_name">Brand name: :</label>
                 <input type="text" id="brand_name" name="brand_name" required value="<%= soccer_boots_edit.brand_name %>">
+                </fieldset>
                 
 
-                
+                <fieldset class="fieldset">
                 <label for="description">Description: </label>
                 <input type="text" id="description" name="description" required value="<%= soccer_boots_edit.description %>">
+                </fieldset> 
                 
     
-               
+                <fieldset class="fieldset">
                 <label for="size">Size: </label>
                 <input type="text" id="size" name="size" required value="<%= soccer_boots_edit.size %>">
-                
+                </fieldset>
 
-               
+                <fieldset class="fieldset">
                 <label for="value">Price: </label>
                 <input type="text" id="value" name="value" placeholder="ex.: 1399" required value="<%= soccer_boots_edit.price %>">
-                
+                </fieldset>
 
-                
+                <fieldset class="fieldset">
                 <label for="link_img">Link Image</label>
                 <input type="text" id="link_img" name="link_img" required value="<%= soccer_boots_edit.link_img %>">
-                
+                </fieldset>
 
     
                 <button id="button" type="submit">Register now! </button>

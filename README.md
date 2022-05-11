@@ -15,8 +15,8 @@ The tools used in this project are:
 - <img src="https://img.icons8.com/ios/30/000000/ios-development.png"/> Nodemon
 - <img src="https://img.icons8.com/color/30/000000/postgreesql.png"/> PostGresSQL
 
-#### Contato
+#### <img src="https://img.icons8.com/material-rounded/30/000000/duplicate-contacts.png"/> Contato
 My contacts are:
 
 <a href="https://www.linkedin.com/in/jaymesonmendes/" target="_blank"
-        ><img src="https://img.icons8.com/ios-filled/100/000000/linkedin-circled--v1.png"/></a>
+        ><img src="https://img.icons8.com/ios-filled/30/000000/linkedin-circled--v1.png"/></a>

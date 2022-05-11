@@ -17,36 +17,37 @@
           
             <h2>Add your favorite boot </h2>
     
-            <form action="/create" method="post">
+            <form class="form" action="/create" method="post">
                 
-               
+                <fieldset class="fieldset">
                 <label for="model_name">Model name: :</label>
                 <input type="text" id="model_name" name="model_name" required>
+                </fieldset>
 
-                
+                <fieldset class="fieldset">
                 <label for="brand_name">Brand name: :</label>
                 <input type="text" id="brand_name" name="brand_name" required>
-                
+                </fieldset>
 
-                
+                <fieldset class="fieldset">
                 <label for="description">Description: </label>
                 <input type="text" id="description" name="description" required>
-                
+                </fieldset>
     
-               
+                <fieldset class="fieldset">
                 <label for="size">Size: </label>
                 <input type="text" id="size" name="size" required>
-                
+                </fieldset>
 
-               
+                <fieldset class="fieldset">
                 <label for="value">Price: </label>
                 <input type="text" id="value" name="value" placeholder="ex.: 1399" required>
-                
+                </fieldset>
 
-                
+                <fieldset class="fieldset">
                 <label for="link_img">Link Image</label>
                 <input type="text" id="link_img" name="link_img" required>
-                
+                </fieldset>
 
     
                 <button id="button" type="submit">Register now! </button>
