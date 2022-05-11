@@ -6,11 +6,11 @@ This project was developed by me, with the purpose of learning in the Fullstack 
 ### <img src="https://img.icons8.com/ios-filled/30/000000/slack.png"/> Stacks
 The tools used in this project are:
 
- - <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-html-responsive-web-design-justicon-lineal-color-justicon.png"/> HTML
+ - <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/30/000000/external-html-responsive-web-design-justicon-lineal-color-justicon.png"/> HTML
 - <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-css-computer-programming-icons-flaticons-lineal-color-flat-icons-2.png"/> CSS
  - <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/30/000000/external-javascript-mobile-app-development-flaticons-lineal-color-flat-icons-3.png"/> JavaScript
 - <img src="https://img.icons8.com/color/30/000000/nodejs.png"/> NodeJS
-- <img src="https://img.icons8.com/dusk/64/000000/eps.png"/> EJS
+- <img src="https://img.icons8.com/dusk/30/000000/eps.png"/> EJS
 - <img src="https://img.icons8.com/color/30/000000/express.png"/> Express
 - <img src="https://img.icons8.com/ios/30/000000/ios-development.png"/> Nodemon
 - <img src="https://img.icons8.com/color/30/000000/postgreesql.png"/> PostGresSQL
