@@ -78,6 +78,14 @@ table tr{
     background-color: #000000;
 }
 
+table tr:nth-child(odd) {
+    background-color: #575757;
+}
+
+table th {
+    background-color: #313131;
+}
+
 section#create form fieldset {
     width: 100%;
     padding: 0% 10%;
